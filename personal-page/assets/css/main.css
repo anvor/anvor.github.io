@@ -1,0 +1,70 @@
+/*
+ * File: main.css
+ * Description: This file contains the main CSS styles for the website.
+ * Author: Vorobey Anton
+ * Version: 1.0
+ * Last Modified: 27.03.2024
+ */
+
+/* 
+ * Table of Contents:
+ * 1. Default Styles
+ * 2. Typography
+ * 3. Layout
+ * 4. Navigation
+ * 5. Forms
+ * 6. Buttons
+ * 7. Images
+ * 8. Utilities
+ */
+
+/* 
+ * 1. Default Styles
+ * Description: Default default browser styles
+ */
+
+ .site-content {
+    overflow: hidden;
+ }
+ 
+/* 
+ * 2. Typography
+ * Description: Styles for text and fonts
+ */
+
+/* 
+ * 3. Layout
+ * Description: Styles for overall layout of the website
+ */
+
+/* 
+ * 4. Navigation
+ * Description: Styles for navigation menus and links
+ */
+
+/* 
+ * 5. Forms
+ * Description: Styles for form elements
+ */
+
+/* 
+ * 6. Buttons
+ * Description: Styles for buttons and button-like elements
+ */
+
+/* 
+ * 7. Images
+ * Description: Styles for images and media
+ */
+
+.logo-img{
+	max-width: 120px;
+	width: 100%;
+	margin-right: 35px;
+}
+
+
+/* 
+ * 8. Utilities
+ * Description: Utility classes and helper styles
+ */
