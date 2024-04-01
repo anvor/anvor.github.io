@@ -22,7 +22,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About me</a>
+                <a class="nav-link" href="#about-me">About me</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Skills</a>
@@ -41,41 +41,47 @@
     <!-- Header end -->
 
     <main class="site-content" id="content">
-      <section class="hero-section d-flex align-items-center">
+      <section class="hero-section d-flex align-items-center" id="home">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-6">
-              <span class="sub-title">Hello, I'm Anton</span>
-              <h1 class="hero-title">Fullstack Developer + <br>IoT Enthusiast</h1>
+              <h2>Hello, I'm Anton</h2>
+              <h1 class="display-1 ">Fullstack Developer + <br>IoT Enthusiast</h1>
               <p class="lead">
                 My insatiable curiosity fuels exploration in both frontend and backend development, evident in my dedication to continuous learning and hands-on projects..</p>
-                <button class="btn m-btn-secondary">Download CV</button>
-              </div>
-            <div class="col-md-6 d-none d-md-block hero-image-box">
-              <img src="assets/img/myphoto.jpg" alt="Logo" width="50%" height="50%" class="img-fluid">
+                <button class="btn m-btn-secondary">View my work</button>
             </div>
-          </div>
-        </div>
-
+            <div class="col-md-6 d-none d-md-block">              
+            </div> 
+          </div>         
+        </div>     
       </section>
-      <section class="about-me d-flex align-items-center">
+      <div class="wave-transition transition-layer-1"></div>
+      <div class="wave-transition transition-layer-2"></div>
+
+
+      <section class="about-section d-flex align-items-center" id="about-me">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-md-6">
-              
+            <div class="col-md-6 d-none d-md-block about-me-image-box">
+              <img src="assets/img/myphoto-no-bg.png" alt="MyPhoto" width="50%" height="50%" class="img-fluid">
             </div>
             <div class="col-md-6">
               <span class="sub-title">About me</span>
               <h2 class="section-title">I'm Anton Vorobey</h2>
               <p class="lead">
-                I'm a Fullstack Developer with a passion for IoT. I'm a graduate of the University of Toronto's Fullstack Web Development Bootcamp, where I honed my skills in HTML, CSS, JavaScript, Node.js, Express.js, and React.js. I also have a background in IoT, having completed a Bachelor's degree in Electrical Engineering from the University of Toronto. I'm excited to leverage my skills in both fields to create innovative solutions that drive positive change.
-              </p>
-              
+                I am a Fullstack Developer based in Regensburg, Germany. Although I might have gotten my degree as IT Specialist for application development recently, I am quite experienced in developing web applications and embedded software from my ceveral internships over past years and my personal side-projects.
+                <br>My passion for technology and innovation has led me recently to explore Cloud-based solutions, thats why i am aiming for a Azure Cloud Certification right now. <br>I am always eager to learn new things and take on new challenges.
+              </p>             
             </div>
           </div>
         </div>
 
       </section>
+
+      <section class="skills-section d-flex align-items-center"></section>
+      <section class="work-section d-flex align-items-center"></section>
+      <section class="contact-section d-flex align-items-center"></section>
     </main>
 
     <!-- Footer start -->

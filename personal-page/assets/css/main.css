@@ -20,18 +20,20 @@
 
 
 @font-face {
-   font-family: 'Antic Didone';
-   src: url('./assets/fonts/Antic Didone.ttf') format('truetype');
-   font-weight: 400;
+   font-family: 'Oswald Regular';
+   src: url('./assets/fonts/Oswald-Regular.ttf') format('truetype');
+   
 }
 
 body {
-   font-family: 'Antic Didone', sans-serif;
-   font-weight: 650;
+   font-family: 'Oswald Regular', sans-serif;
+   
+   color: var(--color-theme-dark-blue);
 }
 
 header {
-   font-family: 'Antic Didone', sans-serif;
+   font-family: 'Oswald Regular', sans-serif;
+   color: var(--color-theme-dark-blue);
 }
 
 
@@ -47,8 +49,10 @@ header {
    @color declaration
   ------------------------------------ */
 
-   --color-primary: #374151;
-   --color-secondary: #DEDEDE;
+
+
+   --color-primary: #1D3557;
+   --color-secondary: #F1FAEE;
    --color-success: #28a745;
    --color-info: #17a2b8;
    --color-warning: #ffc107;
@@ -57,6 +61,18 @@ header {
    --color-dark: #343a40;
    --color-white: #fff;
    --color-black: #000;
+
+   /* ----------------------------------
+   @color palette
+  ------------------------------------ */
+
+  --color-theme-red: #E63946;
+  --color-theme-light: #F1FAEE;
+  --color-theme-light-blue: #A8DADC;
+  --color-theme-blue: #457B9D;
+  --color-theme-dark-blue: #1D3557;
+
+
 
 }
  .site-content {
@@ -74,19 +90,61 @@ header {
  * Description: Styles for overall layout of the website
  */
 
+.header-area {
+	background-color: var(--color-theme-light-blue);
+}
+
  .hero-section {
-      background-color: var(--color-white);
+       background-color: var(--color-theme-light-blue); 
       padding: 200px 0 50px;
       z-index: 1;
       overflow: hidden;
       position: relative;
+	  background-color: var(--color-theme-light-blue);
  }
+
+
+ .wave-transition {
+	aspect-ratio: 960/200;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+ }
+
+
+ .transition-layer-1 {
+	background-image: url('/assets/img/wave-transition-1.svg');
+ }
+ 
+ .transition-layer-2 {
+	background-image: url('/assets/img/wave-transition-2.svg');
+ }
+
+ .about-section {
+	padding: 0px 0 50px;
+	z-index: 1;
+	overflow: hidden;
+	position: relative;
+	background-color: var(--color-theme-light);
+ }
+ 
+	
+
+
 
 /* 
  * 4. Navigation
  * Description: Styles for navigation menus and links
  */
 
+.nav-link{
+	color: var(--color-theme-dark-blue);
+}
+.nav-link:hover{
+	color: var(--color-theme-blue);
+}
 /* 
  * 5. Forms
  * Description: Styles for form elements
@@ -102,18 +160,18 @@ header {
 	font-size: 16px;
 	line-height: 1;
 	font-weight: 600;
-	color: var(--color-primary);
+	color: var(--color-theme-dark-blue);
 	border-radius: 50px;
 	padding: 17px 35px;
-	border: 1px solid var(--color-primary);
+	border: 1px solid var(--color-theme-dark-blue);
 	-webkit-transition: 0.3s;
 	-o-transition: 0.3s;
 	transition: 0.3s;
 	letter-spacing: 1px;
 }
 .m-btn-secondary:hover {
-	background: var(--color-primary);
-	color: var(--color-secondary);
+	background: var(--color-theme-red);
+	color: var(--color-theme-light);
 }
 
 /* 
@@ -122,37 +180,46 @@ header {
  */
 
 .logo-img{
-	max-width: 120px;
+	max-width: 160px;
 	width: 100%;
 	margin-right: 35px;
 }
 
-.hero-image-box img {
-	border-radius: 38px;
+
+.hero-img-box {
+	background-image: url('/assets/img/stock-bg.jpg');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+.about-me-image-box img {
+	/* border-radius: 38px; */
 	-webkit-transform: rotate(4.29deg);
 	-ms-transform: rotate(4.29deg);
 	transform: rotate(4.29deg);
 	position: relative;
-	border: 2px solid var(--color-primary);
+	/* border: 2px solid var(--color-primary); */
 	-webkit-transition: 0.3s;
 	-o-transition: 0.3s;
 	transition: 0.3s;
 }
 
-.hero-image-box img:hover {
-	border: 2px solid var(--color-primary);
+.about-me-image-box img:hover {
+	/* border: 2px solid var(--color-primary); */
 	-webkit-transform: rotate(0);
 	-ms-transform: rotate(0);
 	transform: rotate(0);
 }
-.hero-image-box:before {
+.about-me-image-box:before {
 	content: "";
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	width: 220px;
 	height: 220px;
-	border-radius: 50%;
+	/* border-radius: 50%; */
 	background: var(--color-primary);
 	background: -o-linear-gradient(
 		190deg,
@@ -169,6 +236,8 @@ header {
 	margin-left: -5%;
 	margin-bottom: -5%;
 }
+
+
 /* 
  * 8. Utilities
  * Description: Utility classes and helper styles
