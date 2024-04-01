@@ -18,15 +18,52 @@
  * 8. Utilities
  */
 
+
+@font-face {
+   font-family: 'Antic Didone';
+   src: url('./assets/fonts/Antic Didone.ttf') format('truetype');
+   font-weight: 400;
+}
+
+body {
+   font-family: 'Antic Didone', sans-serif;
+   font-weight: 650;
+}
+
+header {
+   font-family: 'Antic Didone', sans-serif;
+}
+
+
+
 /* 
  * 1. Default Styles
  * Description: Default default browser styles
  */
+:root {
 
+
+/* ----------------------------------
+   @color declaration
+  ------------------------------------ */
+
+   --color-primary: #374151;
+   --color-secondary: #DEDEDE;
+   --color-success: #28a745;
+   --color-info: #17a2b8;
+   --color-warning: #ffc107;
+   --color-danger: #dc3545;
+   --color-light: #f8f9fa;
+   --color-dark: #343a40;
+   --color-white: #fff;
+   --color-black: #000;
+
+}
  .site-content {
     overflow: hidden;
  }
  
+
 /* 
  * 2. Typography
  * Description: Styles for text and fonts
@@ -36,6 +73,14 @@
  * 3. Layout
  * Description: Styles for overall layout of the website
  */
+
+ .hero-section {
+      background-color: var(--color-white);
+      padding: 200px 0 50px;
+      z-index: 1;
+      overflow: hidden;
+      position: relative;
+ }
 
 /* 
  * 4. Navigation
@@ -52,6 +97,25 @@
  * Description: Styles for buttons and button-like elements
  */
 
+ .m-btn-secondary {
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 1;
+	font-weight: 600;
+	color: var(--color-primary);
+	border-radius: 50px;
+	padding: 17px 35px;
+	border: 1px solid var(--color-primary);
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	letter-spacing: 1px;
+}
+.m-btn-secondary:hover {
+	background: var(--color-primary);
+	color: var(--color-secondary);
+}
+
 /* 
  * 7. Images
  * Description: Styles for images and media
@@ -63,7 +127,48 @@
 	margin-right: 35px;
 }
 
+.hero-image-box img {
+	border-radius: 38px;
+	-webkit-transform: rotate(4.29deg);
+	-ms-transform: rotate(4.29deg);
+	transform: rotate(4.29deg);
+	position: relative;
+	border: 2px solid var(--color-primary);
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
 
+.hero-image-box img:hover {
+	border: 2px solid var(--color-primary);
+	-webkit-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+}
+.hero-image-box:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+	background: var(--color-primary);
+	background: -o-linear-gradient(
+		190deg,
+		var(--color-primary) 0%,
+		rgba(115, 67, 210, 0) 100%
+	);
+	background: linear-gradient(
+		260deg,
+		var(--color-primary) 0%,
+		rgba(115, 67, 210, 0) 100%
+	);
+	-webkit-filter: blur(150px);
+	filter: blur(150px);
+	margin-left: -5%;
+	margin-bottom: -5%;
+}
 /* 
  * 8. Utilities
  * Description: Utility classes and helper styles
