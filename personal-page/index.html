@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>My personal Website</title>
   </head>
   <body>
@@ -45,7 +46,7 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-6">
-              <h2>Hello, I'm Anton</h2>
+              <h2>Hello, I'm <b style="color: var(--color-theme-red);">Anton</b></h2>
               <h1 class="display-1 ">Fullstack Developer + <br>IoT Enthusiast</h1>
               <p class="lead">
                 My insatiable curiosity fuels exploration in both frontend and backend development, evident in my dedication to continuous learning and hands-on projects..</p>
@@ -79,7 +80,7 @@
         </div>
 
       </section>
-
+      <div class="gradient-transition"></div>
       <section class="skills-section d-flex align-items-center">
         <div class="container">
           <div class="row align-items-center">
@@ -91,55 +92,148 @@
               </p>
             </div>
             <!-- skill bars -->
+
+            <!-- skills icons: 
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />                                
+          
+            -->
             <div class="col-md-6">
               <div class="skills-list">
-                <div class="skill-item">               
-                <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
-                  <div class="progress">
-                    <div class="progress-bar" style="width: 90%"></div>
-                  </div>
-                </div>
-                <div class="skill-item">        
-                <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                  <div class="progress">
+                <div class="skill-item" id="skill-c-sharp">               
+                <h3>C#</h3>  
+                <div class="progress">
                     <div class="progress-bar" style="width: 80%"></div>
                   </div>
                 </div>
-                <div class="skill-item">                        
-                    <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
+                <div class="skill-item" id="skill-js">        
+                <h3>Java Script</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 70%"></div>
+                  </div>
+                </div>
+                <div class="skill-item" id="skill-c">                        
+                    <h3>C</h3>
                     <div class="progress">
-                      <div class="progress-bar" style="width: 85%"></div>
+                      <div class="progress-bar" style="width: 80%"></div>
                     </div>
                 </div>
-                <div class="skill-item">                        
-                  <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+                <div class="skill-item" id="skill-c-plusplus">                        
+                  <h3>C++</h3>
                   <div class="progress">
-                    <div class="progress-bar" style="width: 65%"></div>
+                    <div class="progress-bar" style="width: 60%"></div>
                   </div>
               </div>
               </div>
             </div>
             <!-- Skills description card -->
-            <div class="col-md-6 skill-description-box">
+            <div class="col-md-6 skill-description-box" id="skill-description">
               <div class="card">  
               <div class="card-body">
                 <h5 class="card-title">Skill Description</h5>
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit harum quos perferendis voluptatum, nemo eaque nam est aliquam, distinctio obcaecati fuga neque accusantium sapiente! Laborum delectus dolorum nisi sequi minima?</p>
               </div>
               </div>
-            </div>
+            </div> 
+          </div>
 
-            <!-- additional skills/tools card-->
-            <div class="col-md-12">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Additional Skills/Tools</h5>
-                  <p class="card-text">>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit enim cupiditate accusamus excepturi tempora corrupti ipsa iusto reiciendis iure dolorum magnam, eius rerum molestiae iste expedita accusantium eum perferendis illo.
-                  </p>
+          <!-- additional skills/tools card-->
+          <div class="col-md-12">
+            <div class="container">
+              <div class="row justify-content-around">
+                <div class="col-md-12 text-center">
+                  <h2>Technologies I have worked with</h2>
+                </div>
+                <div class="col-lg-5 skills-card">
+                  <div class="skills-card-title"><h3>Frontend</h3></div>
+                  <div class="skill-icon-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+                  </div>
+                  <div class="skill-icon-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+                  </div>
+                  <div class="skill-icon-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blazor/blazor-original.svg" />
+                  </div>
+                  <div class="skill-icon-box">                    
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
+                  </div>
+                  <div class="skill-icon-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg" />
+                  </div>
+                  <div class="skill-icon-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" />
+                  </div>
+                  <div class="skill-icon-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+                  </div>
+                </div>
+                <div class="col-lg-5 skills-card">
+                  <div class="skills-card-title"><h3>Backend</h3></div>
+                  <div class="skill-icon-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" />
+                  </div>
+                  <div class="skill-icon-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
+                  </div>
+                  <div class="skill-icon-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg" />
+                  </div>
+                  <div class="skill-icon-box">                   
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" />
+                  </div>
+                  <div class="skill-icon-box">                   
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oauth/oauth-original.svg" />
+                  </div>
+                </div>
+
+                <div class="col-lg-5 skills-card">
+                  <div class="skills-card-title"><h3>DevOPS</h3></div>
+                  <div class="skill-icon-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" />
+                  </div>
+                  <div class="skill-icon-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nuget/nuget-original-wordmark.svg" />
+                  </div>
+                  <div class="skill-icon-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" />
+                  </div>
+                  <div class="skill-icon-box">                   
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original-wordmark.svg" />
+                  </div>
+                  <div class="skill-icon-box">                   
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
+                  </div>
+                  <div class="skill-icon-box">                   
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" />
+                  </div>
+                </div>
+
+                <div class="col-lg-5 skills-card">
+                  <div class="skills-card-title"><h3>Tools</h3></div>
+                  <div class="skill-icon-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg" />
+                  </div>
+                  <div class="skill-icon-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original-wordmark.svg" />
+                  </div>
+                  <div class="skill-icon-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
+                  </div>
+                  <div class="skill-icon-box">                   
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swagger/swagger-original.svg" />
+                  </div>
+                  <div class="skill-icon-box">                   
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cmake/cmake-original.svg" />
+                  </div>
+                  <div class="skill-icon-box">                   
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gcc/gcc-original.svg" />
+                  </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -149,7 +243,35 @@
     </main>
 
     <!-- Footer start -->
-    <footer>
+    <footer class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="footer-logo">
+              <img src="assets/img/vorobey-logo/png/logo-no-background.png" alt="Logo" class="d-inline-block logo-img">
+            </div>
+            <div class="footer-menu">
+              <nav>
+                  <ul>
+                      <li><a href="#">About me</a></li>
+                      <li><a href="#">Skills</a></li>
+                      <li><a href="#">My Work</a></li>
+                      <li><a href="#">Contact</a></li>
+                  </ul>
+              </nav>
+          </div>
+            <ul class="social-icons">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="#"><i class="fab fa-github"></i></a></li>
+            <div class="copyright-text">
+              <p>&copy; 2024 all rights reserved by <b>Anton Vorobey</b></p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- Footer end -->
 
