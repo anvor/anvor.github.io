@@ -50,7 +50,7 @@
               <h1 class="display-1 ">Fullstack Developer + <br>IoT Enthusiast</h1>
               <p class="lead">
                 My insatiable curiosity fuels exploration in both frontend and backend development, evident in my dedication to continuous learning and hands-on projects..</p>
-                <button class="btn m-btn-secondary">View my work</button>
+                <button class="btn m-btn m-btn-secondary">View my work</button>
             </div>
             <div class="col-md-6 d-none d-md-block">              
             </div> 
@@ -238,35 +238,46 @@
         </div>
       </section>
       
-      <section class="work-section d-flex align-items-center"></section>
+      <!-- <section class="work-section d-flex align-items-center"></section> -->
       <section class="contact-section d-flex align-items-center">
         <div class="container">
-          <h2>Contact Us</h2>
-          <form action="/submit_contact" method="post">
-            <div class="mb-3">
-              <label for="fname" class="form-label">First Name</label>
-              <input type="text" class="form-control" id="fname" name="firstname" placeholder="Your name..">
+          <div class="row d-flex align-items-stretch">
+            <div class="col-md-6 px-2 contact-section-cta">
+              <!-- <h1>Lets work together!</h1> -->
             </div>
-      
-            <div class="mb-3">
-              <label for="lname" class="form-label">Last Name</label>
-              <input type="text" class="form-control" id="lname" name="lastname" placeholder="Your last name..">
+            <div class="col-md-6 px-2 contact-section-form">
+              <div class="container">
+                <h2>Contact Us</h2>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                  <input type="hidden" name="access_key" value="3a733bbb-e75a-47f0-b051-d646a008cccc">
+                  <div class="mb-3">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" name="firstName" placeholder="Your name.." required>
+                  </div>
+            
+                  <div class="mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" name="lastName" placeholder="Your last name.." required>
+                  </div>
+            
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="email" placeholder="Your email.." required>
+                  </div>
+            
+                  <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <textarea class="form-control" id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+                  </div>
+                  <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                  <button type="submit" class="btn m-btn m-btn-primary">Submit</button>
+                </form>
+              </div>
             </div>
-      
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="Your email..">
-            </div>
-      
-            <div class="mb-3">
-              <label for="subject" class="form-label">Subject</label>
-              <textarea class="form-control" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-            </div>
-      
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+          </div>
         </div>
       </section>
+
     </main>
 
     <!-- Footer start -->
