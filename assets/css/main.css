@@ -90,6 +90,14 @@ ul {
  * Description: Styles for text and fonts
  */
 
+/* .section-header .section-title {
+	background: linear-gradient(to right, var(--color-theme-red) 0%, var(--color-theme-light) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	
+} */
+
+
 /* 
  * 3. Layout
  * Description: Styles for overall layout of the website
@@ -237,7 +245,9 @@ ul {
 
 .contact-section {
 	padding: 50px 0 50px;
-	background-color: var(--color-theme-dark-blue);
+	/* background-color: var(--color-theme-dark-blue); */
+	background: rgb(29,53,87);
+	background: linear-gradient(30deg, rgba(29,53,87,1) 31%, rgba(39,70,104,1) 62%, rgba(69,123,157,1) 86%, rgba(69,123,157,1) 86%);
 	color: var(--color-theme-light);
 }
 
@@ -254,6 +264,12 @@ ul {
 	
 
 }   */
+
+.section-header {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
 .contact-row {
 	display: flex;
   	align-items: center;
