@@ -77,6 +77,9 @@ footer {
 
 
 }
+
+
+
  .site-content {
     overflow: hidden;
  }
@@ -96,7 +99,11 @@ ul {
     -webkit-text-fill-color: transparent;
 	
 } */
-
+.skills-description-text {
+	font-size: 18px;
+	line-height: 1.5; 
+    letter-spacing: 0.5px; 
+}
 
 /* 
  * 3. Layout
@@ -209,6 +216,10 @@ ul {
 .skill-description-box {
 	display:flex;
   	align-self:flex-start;
+}
+
+.skills-description-card{
+	background-color: var(--color-theme-light);
 }
 
 
